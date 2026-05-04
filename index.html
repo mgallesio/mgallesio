@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gastronomia Falcone — Sapori della tradizione</title>
+  <title>Gastronomia Falcone — Sapori della tradizione dal 1985</title>
   <meta name="description" content="Gastronomia Falcone: piatti pronti, salumi, formaggi e specialità della tradizione italiana. Qualità artigianale dal 1985." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://loremflickr.com" />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -29,35 +30,46 @@
 
   <main id="top">
     <section class="hero">
-      <div class="hero-bg" aria-hidden="true"></div>
+      <picture class="hero-image">
+        <img src="https://loremflickr.com/1920/1200/italian,food,pasta,restaurant/all" alt="Tavola imbandita con specialità italiane" />
+      </picture>
+      <div class="hero-overlay" aria-hidden="true"></div>
       <div class="container hero-inner">
-        <p class="eyebrow">Bottega artigianale &middot; dal 1985</p>
+        <p class="eyebrow light">Bottega artigianale &middot; dal 1985</p>
         <h1>Il gusto della <em>tradizione</em>,<br />ogni giorno fresco.</h1>
         <p class="lede">Piatti pronti, salumi selezionati, formaggi stagionati e specialità della cucina italiana, preparati con cura nel cuore della città.</p>
         <div class="hero-actions">
           <a class="btn primary" href="#specialita">Scopri le specialità</a>
-          <a class="btn ghost" href="#contatti">Prenota un piatto</a>
+          <a class="btn outline" href="#contatti">Prenota un piatto</a>
         </div>
       </div>
+      <a class="scroll-hint" href="#chi-siamo" aria-label="Scorri">↓</a>
     </section>
 
     <section id="chi-siamo" class="section about">
-      <div class="container two-col">
-        <div>
+      <div class="container two-col about-grid">
+        <div class="about-text">
           <p class="eyebrow">Chi siamo</p>
           <h2>Quattro generazioni dietro il bancone.</h2>
-          <p>La <strong>Gastronomia Falcone</strong> nasce nel 1985 dalla passione di Nonno Antonio per la buona cucina. Oggi, come allora, scegliamo materie prime locali, lavoriamo a mano e cuciniamo come si faceva una volta — perché il sapore di casa non si improvvisa.</p>
+          <p class="lead-p">La <strong>Gastronomia Falcone</strong> nasce nel 1985 dalla passione di Nonno Antonio per la buona cucina. Oggi, come allora, scegliamo materie prime locali, lavoriamo a mano e cuciniamo come si faceva una volta — perché il sapore di casa non si improvvisa.</p>
           <ul class="checks">
             <li>Materie prime selezionate dai produttori del territorio</li>
             <li>Pasta fresca e piatti pronti preparati ogni mattina</li>
             <li>Servizio catering per cerimonie ed eventi aziendali</li>
           </ul>
+          <div class="stats-inline">
+            <div><span>40+</span><p>anni di attività</p></div>
+            <div><span>120</span><p>ricette di famiglia</p></div>
+            <div><span>0&nbsp;km</span><p>filiera locale</p></div>
+          </div>
         </div>
-        <aside class="stats">
-          <div><span>40+</span><p>anni di attività</p></div>
-          <div><span>120</span><p>ricette della nonna</p></div>
-          <div><span>0 km</span><p>filiera corta locale</p></div>
-        </aside>
+        <div class="about-image">
+          <img src="https://loremflickr.com/900/1100/chef,kitchen,italian,cooking/all" alt="Lo chef al lavoro nella nostra cucina" />
+          <div class="about-badge">
+            <strong>Dal 1985</strong>
+            <span>Tradizione di famiglia</span>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -68,36 +80,57 @@
 
         <div class="cards">
           <article class="card">
-            <div class="card-icon" aria-hidden="true">🍝</div>
-            <h3>Pasta fresca</h3>
-            <p>Tagliatelle, ravioli e gnocchi tirati a mano ogni mattina, con ripieni di stagione.</p>
+            <div class="card-img"><img src="https://loremflickr.com/640/480/pasta,fresh,homemade/all" alt="Pasta fresca fatta a mano" loading="lazy" /></div>
+            <div class="card-body">
+              <h3>Pasta fresca</h3>
+              <p>Tagliatelle, ravioli e gnocchi tirati a mano ogni mattina, con ripieni di stagione.</p>
+            </div>
           </article>
           <article class="card">
-            <div class="card-icon" aria-hidden="true">🥘</div>
-            <h3>Piatti pronti</h3>
-            <p>Lasagne, parmigiana, polpette al sugo e arrosti: basta scaldare e portare in tavola.</p>
+            <div class="card-img"><img src="https://loremflickr.com/640/480/lasagna,parmigiana,italian/all" alt="Piatti pronti italiani" loading="lazy" /></div>
+            <div class="card-body">
+              <h3>Piatti pronti</h3>
+              <p>Lasagne, parmigiana, polpette al sugo e arrosti: basta scaldare e portare in tavola.</p>
+            </div>
           </article>
           <article class="card">
-            <div class="card-icon" aria-hidden="true">🧀</div>
-            <h3>Salumi e formaggi</h3>
-            <p>Selezione di prodotti DOP, stagionature lunghe e tagli su richiesta al banco.</p>
+            <div class="card-img"><img src="https://loremflickr.com/640/480/salumi,prosciutto,cheese/all" alt="Selezione di salumi e formaggi" loading="lazy" /></div>
+            <div class="card-body">
+              <h3>Salumi e formaggi</h3>
+              <p>Selezione di prodotti DOP, stagionature lunghe e tagli su richiesta al banco.</p>
+            </div>
           </article>
           <article class="card">
-            <div class="card-icon" aria-hidden="true">🍷</div>
-            <h3>Cantina</h3>
-            <p>Vini di piccoli produttori italiani, abbinamenti consigliati dal nostro sommelier.</p>
+            <div class="card-img"><img src="https://loremflickr.com/640/480/wine,italian,cellar/all" alt="Bottiglie di vino in cantina" loading="lazy" /></div>
+            <div class="card-body">
+              <h3>Cantina</h3>
+              <p>Vini di piccoli produttori italiani, abbinamenti consigliati dal nostro sommelier.</p>
+            </div>
           </article>
           <article class="card">
-            <div class="card-icon" aria-hidden="true">🎉</div>
-            <h3>Catering</h3>
-            <p>Buffet, vassoi e menù personalizzati per cerimonie, feste private ed eventi aziendali.</p>
+            <div class="card-img"><img src="https://loremflickr.com/640/480/buffet,catering,italian/all" alt="Buffet per catering" loading="lazy" /></div>
+            <div class="card-body">
+              <h3>Catering</h3>
+              <p>Buffet, vassoi e menù personalizzati per cerimonie, feste private ed eventi aziendali.</p>
+            </div>
           </article>
           <article class="card">
-            <div class="card-icon" aria-hidden="true">🎁</div>
-            <h3>Cesti regalo</h3>
-            <p>Composizioni gourmet con le migliori specialità italiane, perfette da regalare.</p>
+            <div class="card-img"><img src="https://loremflickr.com/640/480/gourmet,gift,basket/all" alt="Cesti regalo gourmet" loading="lazy" /></div>
+            <div class="card-body">
+              <h3>Cesti regalo</h3>
+              <p>Composizioni gourmet con le migliori specialità italiane, perfette da regalare.</p>
+            </div>
           </article>
         </div>
+      </div>
+    </section>
+
+    <section class="quote-band">
+      <div class="container">
+        <blockquote>
+          <p>«Cucinare è un atto d'amore: scegli la materia prima migliore, la rispetti, e la porti in tavola così com'è.»</p>
+          <footer>— Antonio Falcone, fondatore</footer>
+        </blockquote>
       </div>
     </section>
 
@@ -106,12 +139,12 @@
         <p class="eyebrow centered">In bottega</p>
         <h2 class="centered">Uno sguardo dietro al bancone.</h2>
         <div class="gallery-grid">
-          <div class="tile tile-1" role="img" aria-label="Pasta fresca stesa sul tavolo"></div>
-          <div class="tile tile-2" role="img" aria-label="Salumi stagionati appesi"></div>
-          <div class="tile tile-3" role="img" aria-label="Formaggi al banco"></div>
-          <div class="tile tile-4" role="img" aria-label="Piatto pronto fumante"></div>
-          <div class="tile tile-5" role="img" aria-label="Bottiglie di vino in cantina"></div>
-          <div class="tile tile-6" role="img" aria-label="Cesto regalo gourmet"></div>
+          <figure class="tile tile-1"><img src="https://loremflickr.com/800/1000/pasta,fresh,flour/all" alt="Pasta fresca stesa sul tavolo" loading="lazy" /></figure>
+          <figure class="tile tile-2"><img src="https://loremflickr.com/800/600/prosciutto,salumi/all" alt="Salumi stagionati" loading="lazy" /></figure>
+          <figure class="tile tile-3"><img src="https://loremflickr.com/800/600/cheese,parmesan/all" alt="Formaggi al banco" loading="lazy" /></figure>
+          <figure class="tile tile-4"><img src="https://loremflickr.com/800/600/risotto,plate/all" alt="Risotto fumante" loading="lazy" /></figure>
+          <figure class="tile tile-5"><img src="https://loremflickr.com/800/1000/wine,bottles,cellar/all" alt="Bottiglie di vino" loading="lazy" /></figure>
+          <figure class="tile tile-6"><img src="https://loremflickr.com/800/600/bread,bakery/all" alt="Pane appena sfornato" loading="lazy" /></figure>
         </div>
       </div>
     </section>
@@ -121,10 +154,10 @@
         <div>
           <p class="eyebrow">Contatti</p>
           <h2>Vieni a trovarci o ordina al telefono.</h2>
-          <p>Siamo aperti tutta la settimana. Per ordini personalizzati e servizio catering, contattaci con almeno 24 ore di anticipo.</p>
+          <p class="lead-p">Siamo aperti tutta la settimana. Per ordini personalizzati e servizio catering, contattaci con almeno 24 ore di anticipo.</p>
 
           <ul class="contact-list">
-            <li><strong>Indirizzo</strong><span>Via della Tradizione 12, 20100 Milano</span></li>
+            <li><strong>Indirizzo</strong><span>Via della Tradizione 12<br />20100 Milano</span></li>
             <li><strong>Telefono</strong><a href="tel:+390212345678">+39 02 1234 5678</a></li>
             <li><strong>Email</strong><a href="mailto:info@gastronomiafalcone.it">info@gastronomiafalcone.it</a></li>
             <li><strong>Orari</strong>
@@ -147,7 +180,7 @@
             <span>Messaggio</span>
             <textarea name="messaggio" rows="4" required></textarea>
           </label>
-          <button type="submit" class="btn primary">Invia</button>
+          <button type="submit" class="btn primary">Invia messaggio</button>
           <p class="form-msg" hidden>Grazie! Ti risponderemo al più presto.</p>
         </form>
       </div>
@@ -157,7 +190,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>
-        <span class="brand-name">Gastronomia <em>Falcone</em></span>
+        <span class="brand-name light">Gastronomia <em>Falcone</em></span>
         <p>Sapori autentici dal 1985.</p>
       </div>
       <div class="footer-meta">
@@ -169,6 +202,12 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Reveal-on-scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    document.querySelectorAll('.section, .card, .tile, .quote-band').forEach(el => io.observe(el));
   </script>
 </body>
 </html>
